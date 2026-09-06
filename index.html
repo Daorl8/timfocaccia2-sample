@@ -57,7 +57,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1;letter-spacing:.0
 .stripe{height:16px;background:repeating-linear-gradient(90deg,var(--grn) 0 26px,#fff 26px 52px,var(--red) 52px 78px,#fff 78px 104px)}
 .stripe.grn{background:repeating-linear-gradient(90deg,var(--grn) 0 26px,var(--cream) 26px 52px)}
 /* eyebrow — deli label */
-.eyebrow{display:inline-block;font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red-d);border:1.5px solid var(--red);padding:5px 11px}
+.eyebrow{display:inline-block;font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red-d)}
 .eyebrow .k{font-family:var(--kr);letter-spacing:.02em;color:var(--ink2);margin-left:8px;text-transform:none;font-weight:500}
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:600;font-size:.92rem;padding:12px 26px;border-radius:0;transition:transform .18s var(--ease),background .2s,color .2s,border-color .2s}
@@ -91,8 +91,8 @@ h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1;letter-spacing:.0
 /* hero */
 .hero{padding:calc(var(--bar) + 30px) 0 clamp(34px,5vw,60px);overflow:hidden}
 .hero-in{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,5vw,64px);align-items:center;min-height:64vh}
-.hero .eyebrow{display:inline-block;margin-bottom:20px}
-.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.02;letter-spacing:0;white-space:nowrap}
+.hero .eyebrow{display:inline-block;margin-bottom:20px;border:1.5px solid var(--red);padding:5px 11px}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(3.2rem,8.5vw,6rem);line-height:.95;letter-spacing:0}
 .hero h1 em{font-style:normal;color:var(--red)}
 .hero .lead{margin-top:24px;font-size:1.05rem;color:var(--ink2);max-width:28em;line-height:1.8}
 .hero-cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
@@ -237,7 +237,7 @@ footer a:focus-visible,.drawer a:focus-visible,.band a:focus-visible{outline-col
   <div class="wrap hero-in">
     <div class="hero-txt">
       <span class="eyebrow">Handmade focaccia &amp; baguette.</span>
-      <h1>Tim <em>Focaccia</em></h1>
+      <h1>Tim<br><em>Focaccia</em></h1>
       <p class="script" style="font-size:clamp(1.6rem,3.4vw,2.2rem);margin-top:12px;line-height:1">fatto a mano ~ every morning</p>
       <p class="lead">Baked fresh every day and piled high with the good stuff.</p>
       <div class="hero-cta">
