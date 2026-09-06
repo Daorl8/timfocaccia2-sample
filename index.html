@@ -10,15 +10,15 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tim Focaccia — Handmade Focaccia & Baguette Sandwiches">
 <meta property="og:description" content="매일 굽는 수제 포카치아·바게트에 신선한 재료를 가득. 서울 혜화 · 익선의 이탈리안 샌드위치 전문점.">
-<meta property="og:image" content="https://timfocaccia-sample.lgt3232.workers.dev/og-tim.jpg">
+<meta property="og:image" content="https://timfocaccia2-sample.lgt3232.workers.dev/og-tim.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://timfocaccia-sample.lgt3232.workers.dev/">
+<meta property="og:url" content="https://timfocaccia2-sample.lgt3232.workers.dev/">
 <meta property="og:site_name" content="Tim Focaccia">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://timfocaccia-sample.lgt3232.workers.dev/og-tim.jpg">
-<link rel="canonical" href="https://timfocaccia-sample.lgt3232.workers.dev/">
+<meta name="twitter:image" content="https://timfocaccia2-sample.lgt3232.workers.dev/og-tim.jpg">
+<link rel="canonical" href="https://timfocaccia2-sample.lgt3232.workers.dev/">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Caveat:wght@600;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Tim Focaccia","alternateName":"팀포카치아","description":"수제 포카치아·바게트 샌드위치 전문점. 서울 혜화·익선.","image":"https://timfocaccia-sample.lgt3232.workers.dev/tim-hero.webp","servesCuisine":["Italian","Sandwich","Bakery"],"priceRange":"₩₩","url":"https://timfocaccia-sample.lgt3232.workers.dev/","department":[{"@type":"Restaurant","name":"Tim Focaccia 혜화","telephone":"+82-507-1491-0837","address":{"@type":"PostalAddress","streetAddress":"대학로11길 18 1층","addressLocality":"종로구","addressRegion":"서울","addressCountry":"KR"}},{"@type":"Restaurant","name":"Tim Focaccia 익선","telephone":"+82-2-765-1070","address":{"@type":"PostalAddress","streetAddress":"돈화문로 81-1 1층","addressLocality":"종로구","addressRegion":"서울","addressCountry":"KR"}}]}
+{"@context":"https://schema.org","@type":"Restaurant","name":"Tim Focaccia","alternateName":"팀포카치아","description":"수제 포카치아·바게트 샌드위치 전문점. 서울 혜화·익선.","image":"https://timfocaccia2-sample.lgt3232.workers.dev/tim-hero.webp","servesCuisine":["Italian","Sandwich","Bakery"],"priceRange":"₩₩","url":"https://timfocaccia2-sample.lgt3232.workers.dev/","department":[{"@type":"Restaurant","name":"Tim Focaccia 혜화","telephone":"+82-507-1491-0837","address":{"@type":"PostalAddress","streetAddress":"대학로11길 18 1층","addressLocality":"종로구","addressRegion":"서울","addressCountry":"KR"}},{"@type":"Restaurant","name":"Tim Focaccia 익선","telephone":"+82-2-765-1070","address":{"@type":"PostalAddress","streetAddress":"돈화문로 81-1 1층","addressLocality":"종로구","addressRegion":"서울","addressCountry":"KR"}}]}
 </script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -125,9 +125,16 @@ h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1;letter-spacing:.0
 .mcard .ph{aspect-ratio:4/3;overflow:hidden;background:var(--bg2)}
 .mcard .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 @media(hover:hover){.mcard:hover .ph img{transform:scale(1.05)}}
-.mcard .b{padding:18px 20px 22px}
-.mcard h3{font-family:var(--disp);font-weight:700;font-size:1.18rem;letter-spacing:-.01em;margin-bottom:6px}
-.mcard p{font-size:.9rem;color:var(--ink2);line-height:1.6}
+.mcard .ph{position:relative}
+.mcard .tag{position:absolute;top:10px;left:10px;font-family:var(--sans);font-weight:700;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:#fff;background:var(--red);border:1.5px solid #fff;padding:4px 9px}
+.mcard .tag.pop{background:var(--grn)}
+.mcard .tag.ltd{background:var(--ink)}
+.mcard .b{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.mcard h3{font-family:var(--disp);font-weight:400;font-size:1.16rem;letter-spacing:.01em;line-height:1.1;margin-bottom:7px}
+.mcard p{font-size:.82rem;color:var(--ink2);line-height:1.55}
+.mcard .price{margin-top:12px;font-family:var(--disp);font-weight:400;font-size:1.12rem;color:var(--ink);letter-spacing:.01em}
+.mcard .price span{font-size:.82rem;color:var(--ink2);margin-right:3px}
+.menu-note{margin-top:22px;font-size:.82rem;color:var(--ink2);line-height:1.6}
 .mnote{margin-top:26px;text-align:center;font-size:.9rem;color:var(--ink2)}
 
 /* strip band */
@@ -217,6 +224,7 @@ footer a:focus-visible,.drawer a:focus-visible,.band a:focus-visible{outline-col
     <a class="brand" href="#top">Tim F<span class="o">o</span>caccia</a>
     <nav class="nav-lnk" aria-label="주요 메뉴">
       <a href="#about">About</a>
+      <a href="#menu">Menu</a>
       <a href="#space">Space</a>
       <a href="#location">Location</a>
     </nav>
@@ -226,6 +234,7 @@ footer a:focus-visible,.drawer a:focus-visible,.band a:focus-visible{outline-col
 <div class="drawer" id="drawer">
   <button class="dx" id="dx" aria-label="메뉴 닫기">&times;</button>
   <a href="#about">About</a>
+  <a href="#menu">Menu</a>
   <a href="#space">Space</a>
   <a href="#location">Location</a>
   <a class="dn" href="https://www.instagram.com/timfocacciaiksun/" target="_blank" rel="noopener">Instagram</a>
@@ -276,6 +285,56 @@ footer a:focus-visible,.drawer a:focus-visible,.band a:focus-visible{outline-col
       <p>수제 잠봉과 프로마쥬, 매일 반죽해 구워내는 포카치아와 바게트까지 풍성한 맛을 위해 손이 많이 가는 과정을 마다하지 않습니다.</p>
     </div>
     <figure class="band-media rv"><img src="tim-bread-tim.webp" alt="TIM 각인이 새겨진 갓 구운 빵" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="sec menu" id="menu">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Il menù<span class="k">메뉴</span></span>
+      <h2>Sandwiches <em>&amp; more.</em></h2>
+      <p>매일 아침 직접 구운 빵에 신선한 재료를 듬뿍. 대표 메뉴를 소개합니다.</p>
+    </div>
+    <div class="mgrid">
+      <article class="mcard rv">
+        <div class="ph"><span class="tag">Signature</span><img src="menu-signature.webp" alt="시그니처 포카치아 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Signature Focaccia</h3><p>토마토 · 생모짜렐라 · 바질페스토 · 수제잠봉햄 · 루꼴라 (가지 or 아보카도)</p><div class="price"><span>₩</span>12,900</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><img src="menu-jambon.webp" alt="잠봉 프로마쥬 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Jambon Fromage</h3><p>수제잠봉햄 · 바질페스토 · 고메버터 · 에멘탈치즈</p><div class="price"><span>₩</span>10,800</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><img src="menu-caprese.webp" alt="올리브 카프레제 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Olives Caprese</h3><p>생토마토 · 모짜렐라 · 에멘탈치즈 · 올리브 타프나드 · 루꼴라</p><div class="price"><span>₩</span>12,800</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><img src="menu-italiano.webp" alt="이탈리안 프로마쥬 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Italiano Fromage</h3><p>썬드라이토마토 · 수제잠봉햄 · 리코타치즈 · 바질 · 치커리 · 모짜렐라</p><div class="price"><span>₩</span>11,800</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><img src="menu-apricot.webp" alt="살구 잠봉뵈르 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Apricot Jambon Beurre</h3><p>살구 스프레드 · 프랑스 고메버터 · 수제잠봉햄 · 루꼴라</p><div class="price"><span>₩</span>10,800</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><img src="menu-hawaiian.webp" alt="하와이안 쉬림프 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Hawaiian Shrimp</h3><p>구운 파인애플 or 아보카도 · 레드페퍼 · 고메버터 · 수제잠봉햄</p><div class="price"><span>₩</span>13,500</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><img src="menu-chicken.webp" alt="그릴드치킨 라페 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Grilled Chicken</h3><p>그릴드치킨 라페</p><div class="price"><span>₩</span>10,500</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><span class="tag pop">인기</span><img src="menu-garlic.webp" alt="마늘 바게트" loading="lazy"></div>
+        <div class="b"><h3>Garlic Baguette</h3><p>마늘 바게트</p><div class="price"><span>₩</span>7,500</div></div>
+      </article>
+      <article class="mcard rv">
+        <div class="ph"><span class="tag ltd">한정</span><img src="menu-beet-salmon.webp" alt="비트 연어브릭스 샌드위치" loading="lazy"></div>
+        <div class="b"><h3>Beet &amp; Salmon</h3><p>비트 연어브릭스 샌드</p><div class="price"><span>₩</span>15,400</div></div>
+      </article>
+    </div>
+    <p class="menu-note">· 메뉴와 가격은 매장 사정에 따라 변동될 수 있습니다. 최신 메뉴는 인스타그램에서 확인해 주세요.</p>
   </div>
 </section>
 
@@ -355,6 +414,7 @@ footer a:focus-visible,.drawer a:focus-visible,.band a:focus-visible{outline-col
     </div>
     <nav class="foot-links" aria-label="바로가기">
       <a href="#about">About</a>
+      <a href="#menu">Menu</a>
       <a href="#space">Space</a>
       <a href="#location">Location</a>
       <a href="https://www.instagram.com/timfocacciaiksun/" target="_blank" rel="noopener">Instagram</a>
