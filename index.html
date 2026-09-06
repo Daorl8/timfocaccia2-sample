@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Caveat:wght@600;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Tim Focaccia","alternateName":"팀포카치아","description":"수제 포카치아·바게트 샌드위치 전문점. 서울 혜화·익선.","image":"https://timfocaccia-sample.lgt3232.workers.dev/tim-hero.webp","servesCuisine":["Italian","Sandwich","Bakery"],"priceRange":"₩₩","url":"https://timfocaccia-sample.lgt3232.workers.dev/","department":[{"@type":"Restaurant","name":"Tim Focaccia 혜화","telephone":"+82-507-1491-0837","address":{"@type":"PostalAddress","streetAddress":"대학로11길 18 1층","addressLocality":"종로구","addressRegion":"서울","addressCountry":"KR"}},{"@type":"Restaurant","name":"Tim Focaccia 익선","telephone":"+82-2-765-1070","address":{"@type":"PostalAddress","streetAddress":"돈화문로 81-1 1층","addressLocality":"종로구","addressRegion":"서울","addressCountry":"KR"}}]}
@@ -35,7 +35,7 @@
  --ink:#2A2018; --ink2:#6E5C46; --faint:#A8967E;
  --red:#C0392B; --red-d:#A32E22; --grn:#3E7A4E; --grn-d:#2F5E3C; --pink:#E5A9A9;
  --line:#D3C09B; --bd:#2E2519;
- --disp:'Oswald','Pretendard Variable',sans-serif;
+ --disp:'Bevan','Pretendard Variable',Georgia,serif;
  --script:'Caveat',cursive;
  --sans:'Pretendard Variable',Pretendard,system-ui,sans-serif;
  --kr:'Pretendard Variable',Pretendard,system-ui,sans-serif;
@@ -51,7 +51,7 @@ section{position:relative}
 ::selection{background:var(--red);color:#fff}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .disp{font-family:var(--disp)}
-h1,h2,h3{font-family:var(--disp);font-weight:300;line-height:1;letter-spacing:.01em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1;letter-spacing:.01em;text-transform:uppercase}
 .script{font-family:var(--script);text-transform:none;font-weight:700;color:var(--red);letter-spacing:0}
 /* awning stripe motif (deli) */
 .stripe{height:16px;background:repeating-linear-gradient(90deg,var(--grn) 0 26px,#fff 26px 52px,var(--red) 52px 78px,#fff 78px 104px)}
@@ -74,7 +74,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:300;line-height:1;letter-spacing:.0
 /* header */
 .hdr{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s var(--ease),box-shadow .35s,border-color .35s}
 .hdr-in{height:var(--bar);display:flex;align-items:center;justify-content:space-between;padding:0 30px;max-width:1280px;margin:0 auto}
-.brand{font-family:var(--disp);font-weight:300;font-size:1.55rem;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)}
+.brand{font-family:var(--disp);font-weight:400;font-size:1.55rem;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)}
 .brand .o{color:var(--red)}
 .nav-lnk{display:flex;gap:26px}
 .nav-lnk a{font-family:var(--sans);font-size:.88rem;font-weight:500;color:var(--ink);opacity:.8;transition:.2s}
@@ -92,7 +92,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:300;line-height:1;letter-spacing:.0
 .hero{padding:calc(var(--bar) + 30px) 0 clamp(34px,5vw,60px);overflow:hidden}
 .hero-in{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(28px,5vw,64px);align-items:center;min-height:64vh}
 .hero .eyebrow{display:inline-block;margin-bottom:20px}
-.hero h1{font-family:var(--disp);font-weight:300;font-size:clamp(3.1rem,7vw,5.4rem);line-height:.98;letter-spacing:0;white-space:nowrap}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.02;letter-spacing:0;white-space:nowrap}
 .hero h1 em{font-style:normal;color:var(--red)}
 .hero .lead{margin-top:24px;font-size:1.05rem;color:var(--ink2);max-width:28em;line-height:1.8}
 .hero-cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
@@ -135,7 +135,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:300;line-height:1;letter-spacing:.0
 .band-in{display:grid;grid-template-columns:1fr 1fr;align-items:center}
 .band-txt{padding:clamp(40px,6vw,80px) clamp(30px,5vw,64px)}
 .band-txt .eyebrow{color:#DBE2C1}
-.band-txt h2{color:#fff;font-family:var(--disp);font-weight:300;font-size:clamp(2.1rem,4.4vw,3.2rem);letter-spacing:.01em;line-height:.96;margin:12px 0 16px}
+.band-txt h2{color:#fff;font-family:var(--disp);font-weight:400;font-size:clamp(2.1rem,4.4vw,3.2rem);letter-spacing:.01em;line-height:.96;margin:12px 0 16px}
 .band-txt .script{color:#EDE7C6}
 .band-txt p{color:#EBEED8;line-height:1.85;max-width:30em}
 .band-media{position:relative;aspect-ratio:1/1;overflow:hidden}
@@ -170,7 +170,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:300;line-height:1;letter-spacing:.0
 /* footer */
 footer{background:var(--ink);color:#E9DCC9;padding:clamp(48px,7vw,80px) 0 90px}
 .foot-in{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
-.foot-brand .fb{font-family:var(--disp);font-weight:300;font-size:1.9rem;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-bottom:4px}
+.foot-brand .fb{font-family:var(--disp);font-weight:400;font-size:1.9rem;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin-bottom:4px}
 .foot-brand .fb .o{color:var(--red)}
 .foot-brand p{font-size:.9rem;color:#B8A88F;line-height:1.8;max-width:26em}
 .foot-links{display:flex;gap:24px;flex-wrap:wrap}
